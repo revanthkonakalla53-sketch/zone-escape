@@ -1,0 +1,6 @@
+{
+  "name": "Zone Escape Runner",
+  "description": "A 2D endless runner survival game.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

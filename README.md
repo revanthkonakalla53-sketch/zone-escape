@@ -1,4 +1,4 @@
-URL = "https://zone-escape-6x1sscoix-revanthkonakalla53-sketchs-projects.vercel.app/"
+URL = "https://zone-escape.vercel.app/"
 🚀 Zone Escape Runner
 A high-speed, 2D mobile survival game built with React Native, Expo, and Supabase.
 

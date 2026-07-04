@@ -1,20 +1,28 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+🚀 Zone Escape Runner
+A high-speed, 2D mobile survival game built with React Native, Expo, and Supabase.
 
-# Run and deploy your AI Studio app
+📝 Project Overview
+Zone Escape Runner is a battle-royale-themed endless runner designed to test the limits of lightweight rendering in React Native. Instead of relying on heavy image assets, the game dynamically renders the player and obstacles using pure React Native View components and state-driven styling.
 
-This contains everything you need to run your app locally.
+This project was built to explore continuous game-loop mechanics, complex state management, and real-time database integration in a mobile environment.
 
-View your app in AI Studio: https://ai.studio/apps/0ba60422-dcba-4610-92cb-2530c66c9de7
+🛠️ Tech Stack
+Frontend: React Native, Expo
 
-## Run Locally
+Backend / Database: Supabase (PostgreSQL)
 
-**Prerequisites:**  Node.js
+Core Mechanics: Custom game loop, coordinate-based collision detection, local AsyncStorage
 
+✨ Key Features
+Optimized Rendering: Achieves smooth performance by utilizing geometric shapes and strict state-driven coordinate updates rather than external heavy assets.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Dynamic Obstacle Generation: Implements randomized algorithm-driven spawning for falling supply crates and shrinking zone barriers.
+
+Global Leaderboards: Integrates a Supabase backend to push and fetch real-time high scores from players globally, moving beyond standard local storage.
+
+Cross-Platform Ready: Fully developed and tested using Expo Application Services (EAS) for seamless Android (.aab) deployment.
+
+🧠 Technical Challenges & Learnings
+The Game Loop: Successfully engineered a continuous loop in React Native without relying on heavy game engines, ensuring the state updates seamlessly synchronized with the UI.
+
+Collision Detection: Built a custom mathematical bounds-checking system to accurately detect when the player's coordinate matrix intersected with randomly generated falling obstacles.

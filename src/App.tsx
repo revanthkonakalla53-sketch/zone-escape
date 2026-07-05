@@ -189,6 +189,26 @@ export default function App() {
             <div className="absolute top-6 right-6 text-white/50 font-mono text-2xl font-bold tracking-tighter">
               {score}
             </div>
+
+            {/* Mobile Controls */}
+            <div className="absolute bottom-8 left-0 w-full flex justify-between px-6 z-50 md:hidden">
+              <button
+                onTouchStart={() => keys.current['ArrowLeft'] = true}
+                onTouchEnd={() => keys.current['ArrowLeft'] = false}
+                onContextMenu={(e) => e.preventDefault()}
+                className="bg-white/10 active:bg-white/30 text-white/80 p-6 rounded-2xl backdrop-blur-sm border border-white/20 font-bold text-xl touch-manipulation select-none w-28 shadow-lg"
+              >
+                ←
+              </button>
+              <button
+                onTouchStart={() => keys.current['ArrowRight'] = true}
+                onTouchEnd={() => keys.current['ArrowRight'] = false}
+                onContextMenu={(e) => e.preventDefault()}
+                className="bg-white/10 active:bg-white/30 text-white/80 p-6 rounded-2xl backdrop-blur-sm border border-white/20 font-bold text-xl touch-manipulation select-none w-28 shadow-lg"
+              >
+                →
+              </button>
+            </div>
           </>
         )}
 

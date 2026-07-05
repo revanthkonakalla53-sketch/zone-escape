@@ -1,1 +1,30 @@
 @import "tailwindcss";
+#mobile-controls {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Places Left on the left, Right on the right */
+  padding: 0 40px; 
+  box-sizing: border-box;
+  z-index: 1000; /* Ensures buttons stay on top of the game canvas */
+  display: none; /* Hides on desktop */
+}
+
+/* Shows the controls only on mobile screen sizes */
+@media (max-width: 768px) {
+  #mobile-controls {
+    display: flex;
+  }
+}
+
+#mobile-controls button {
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid #333;
+  border-radius: 12px;
+  user-select: none; /* Prevents double-tap zooming or text highlighting */
+  touch-action: manipulation; /* Optimizes for touch */
+}
